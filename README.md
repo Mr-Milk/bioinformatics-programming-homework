@@ -33,18 +33,24 @@
 
    ```shell
    git clone https://github.com/Mr-Milk/bioinformatics-programming-homework.git
+   
    # 进入这个文件夹
    cd bioinformatics-programming-homework
-   # 如果这一周是周一，则进入week1这个文件夹
-   cd week1
-   # 创建你自己名字的文件夹，在这个目录下保存你的作业
-   mkdir 你的名字
-   cd 你的名字
    ```
 
 3. 当你完成你的作业之后
 
    ```shell
+   # 先更新你本地的仓库
+   git pull origin master
+   
+   # 如果这一周是周一，则进入week1这个文件夹
+   cd week1
+   
+   # 创建你自己名字的文件夹，在这个目录下保存你的作业
+   mkdir 你的名字
+   cd 你的名字
+   
    # 以下命令可以查看那些文件发生了更改
    git status
    
