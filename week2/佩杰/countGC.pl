@@ -16,6 +16,10 @@ while (my $line = <SEQ>) {
 	$numT += $line =~ s/T/T/g;
 	$numC += $line =~ s/C/C/g;
 	$numG += $line =~ s/G/G/g;
+	$numA += $line =~ s/a/a/g;
+	$numT += $line =~ s/t/t/g;
+	$numC += $line =~ s/c/c/g;
+	$numG += $line =~ s/g/g/g;
 }
 
 my $CGnum = ($numC + $numG) / ($numG + $numC + $numT + $numA);
