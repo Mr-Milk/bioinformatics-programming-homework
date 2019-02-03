@@ -18,29 +18,21 @@ public class CountGC {
                     char base = line.charAt(i);
                     switch (base){
                         case 'A':
-                            countA++;
-                            break;
+                            countA++; break;
                         case 'C':
-                            countC++;
-                            break;
+                            countC++; break;
                         case 'T':
-                            countT++;
-                            break;
+                            countT++; break;
                         case 'G':
-                            countG++;
-                            break;
+                            countG++; break;
                         case 'a':
-                            countA++;
-                            break;
+                            countA++; break;
                         case 't':
-                            countT++;
-                            break;
+                            countT++; break;
                         case 'c':
-                            countC++;
-                            break;
+                            countC++; break;
                         case 'g':
-                            countG++;
-                            break;
+                            countG++; break;
                         default:
                             break;
                     }
