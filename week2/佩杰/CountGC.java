@@ -29,6 +29,18 @@ public class CountGC {
                         case 'G':
                             countG++;
                             break;
+                        case 'a':
+                            countA++;
+                            break;
+                        case 't':
+                            countT++;
+                            break;
+                        case 'c':
+                            countC++;
+                            break;
+                        case 'g':
+                            countG++;
+                            break;
                         default:
                             break;
                     }
