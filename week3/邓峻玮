@@ -1,0 +1,23 @@
+use strict;
+use warnings;
+
+if ( scalar( @ARGV != 1 ) ) {
+    die "Usage: perl $0 <SCU49845.txt>\n";    
+}
+
+my $SCU49845File = $ARGV[0];
+open( SCU, "<$SCU49845File" ) || die "can't open the $SCU49845File\n";
+my $seqLength = 0;
+while(my $line = <SCU>)
+{
+    chomp($line);
+	if($line =~ /CDS\s+[\D]*(\d+)..(\d+)/)
+	{
+		my @seqLocation = ($1..$2);
+		$seqLength += scalar(@seqLocation);
+	}
+}
+close (SCU);
+print "the Length is $seqLength\n";
+
+##the Length is 3416
